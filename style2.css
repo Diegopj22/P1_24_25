@@ -1,23 +1,36 @@
-/* Estilos para la página de inicio */
 body {
-    background: linear-gradient(to bottom, #ff99cc, #ffcccc);
-    font-family: Arial, sans-serif;
-}
-
-h1 {
-    color: red;
-    text-align: center;
-}
-
-p {
-    color: blue;
-    text-align: center;
-}
-
-.container {
-    max-width: 960px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "nav article"
+      "aside article"
+      "footer footer";
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+    margin: 0;
     padding: 20px;
-}
+  }
+  
+  header {
+    grid-area: header;
+  }
+  
+  nav {
+    grid-area: nav;
+  }
+  
+  article {
+    grid-area: article;
+  }
+  
+  aside {
+    grid-area: aside;
+  }
+  
+  footer {
+    grid-area: footer;
+  }
+  
   
     
