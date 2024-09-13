@@ -1,0 +1,59 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ejercicio estructura</title>
+<style>
+    body {
+        display: grid;
+        grid-template-areas:
+            "header header header"
+            "nav article aside"
+            "footer footer footer";
+        grid-gap: 10px;
+        height: 100vh;
+        margin: 0;
+    }
+
+    header {
+        grid-area: header;
+        background-color: #f1f1f1;
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav {
+        grid-area: nav;
+        background-color: #e1e1e1;
+        padding: 20px;
+    }
+
+    article {
+        grid-area: article;
+        background-color: #d1d1d1;
+        padding: 20px;
+    }
+
+    aside {
+        grid-area: aside;
+        background-color: #c1c1c1;
+        padding: 20px;
+    }
+
+    footer {
+        grid-area: footer;
+        background-color: #b1b1b1;
+        padding: 20px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<header>header</header>
+<article>article</article>
+<nav>nav</nav>
+<aside>aside</aside>
+<footer>footer</footer>
+</body>
+</html>
