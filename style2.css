@@ -4,43 +4,113 @@ body {
         "header header header"
         "nav article aside"
         "footer footer footer";
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 3fr 1fr; /* Adjust the column widths */
+    grid-template-rows: auto 1fr auto; /* Adjust the row heights as needed */
     height: 100vh;
     margin: 0;
+    font-family: 'Raleway', Arial, sans-serif; /* Use a more professional font */
+    font-size: 16px;
+    color: #4C5A5F; /* Use a darker, more professional color */
+    background-color: #F2F2F2; /* Slightly off-white background */
+    
+    /* Add some creative elements */
+    background-image: linear-gradient(to bottom right, #4C5A5F, #7D8B8F); /* Diagonal gradient */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    border-radius: 10px; /* Rounded corners */
 }
 
 header, nav, article, aside, footer {
-    display: flex; /* Usamos flexbox para centrar */
-    justify-content: center; /* Centramos horizontalmente */
-    align-items: center; /* Centramos verticalmente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 10px;
+    padding: 40px; /* Increase the padding for a more spacious layout */
+    
+    /* Add some creative elements */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    border-radius: 5px; /* Rounded corners */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
 }
 
 header {
     grid-area: header;
-    background-color: lightgray;
+    background-color: #4C5A5F; /* Darker gray */
+    color: #FFFFFF;
+    font-size: 36px; /* Increase the header font size */
+    font-weight: bold;
+    text-transform: uppercase; /* Add some visual interest */
+    letter-spacing: 2px; /* Increase the letter spacing */
+    
+    /* Add some creative elements */
+    animation: headerAnimation 2s ease-in-out infinite; /* Add a subtle animation */
+}
+
+@keyframes headerAnimation {
+    0% { transform: translateY(-5px); }
+    50% { transform: translateY(5px); }
+    100% { transform: translateY(-5px); }
 }
 
 nav {
     grid-area: nav;
-    background-color: lightblue;
+    background-color: #7D8B8F; /* Darker gray */
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 22px; /* Increase the nav font size */
+    text-transform: uppercase; /* Add some visual interest */
+    letter-spacing: 1px; /* Increase the letter spacing */
+    
+    /* Add some creative elements */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Slightly darker box shadow */
+    transform: translateX(-10px); /* Offset the nav element */
 }
 
 article {
     grid-area: article;
-    background-color: lightgreen;
+    background-color: #FFFFFF; /* White */
+    color: #4C5A5F;
+    line-height: 1.8; /* Increase the line height for better readability */
+    font-size: 18px; /* Increase the article font size */
+    text-align: justify; /* Justify the text for a more professional look */
+    
+    /* Add some creative elements */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Slightly darker box shadow */
+    transform: translateX(10px); /* Offset the article element */
 }
 
 aside {
     grid-area: aside;
-    background-color: lightcoral;
+    background-color: #7D8B8F; /* Darker gray */
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 22px; /* Increase the aside font size */
+    text-transform: uppercase; /* Add some visual interest */
+    letter-spacing: 1px; /* Increase the letter spacing */
+    
+    /* Add some creative elements */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Slightly darker box shadow */
+    transform: translateX(10px); /* Offset the aside element */
 }
 
 footer {
     grid-area: footer;
-    background-color: lightyellow;
-}
-  
+    background-color: #4C5A5F; /* Darker gray */
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 30px; /* Increase the footer padding */
+    text-align: center; /* Center the footer text */
+    font-style: italic; /* Add some style to the footer */
     
+    /* Add some creative elements */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Slightly darker box shadow */
+    transform: translateY(10px); /* Offset the footer element */
+}
+
+/* Add a hover effect to make the elements more interactive */
+header:hover, nav:hover, article:hover, aside:hover, footer:hover {
+    transform: scale(1.05); /* Slightly enlarge the element on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Increase the box shadow on hover */
+}
+
+
