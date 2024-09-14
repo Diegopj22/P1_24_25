@@ -1,7 +1,6 @@
-
 /* Estilos generales */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Arial', sans-serif; /* Fuente limpia y moderna */
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -16,6 +15,7 @@ header {
     padding: 20px;
     text-align: center;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    border-bottom: 4px solid #2980B9; /* Línea azul en la parte inferior */
 }
 
 /* Estilo de los títulos */
@@ -28,6 +28,8 @@ h2 {
     font-size: 1.8em;
     color: #2980B9; /* Color azul */
     margin-top: 20px;
+    border-bottom: 2px solid #2980B9; /* Línea debajo de los títulos */
+    padding-bottom: 5px; /* Espacio debajo del título */
 }
 
 /* Estilo de las secciones */
@@ -44,23 +46,73 @@ ol {
     padding-left: 20px;
 }
 
-/* Estilo del bloque aside */
+/* Estilo del bloque aside (Publicidad) */
 aside {
-    background-color: #D5DBDB; /* Color gris claro */
-    padding: 15px;
+    background: linear-gradient(135deg, #F0F0F0 0%, #DCDCDC 100%); /* Fondo con degradado */
+    padding: 20px;
     margin-top: 20px;
-    border-left: 5px solid #2980B9; /* Línea azul a la izquierda */
+    border-radius: 10px; /* Bordes más redondeados */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+    position: relative; /* Para efectos de desplazamiento */
+    overflow: hidden; /* Para ocultar el desbordamiento */
 }
 
-/* Estilo del pie de página */
-footer {
-    background-color: #2C3E50; /* Color azul oscuro */
-    color: white;
-    padding: 10px;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+/* Efecto de desplazamiento y sombra al pasar el mouse */
+aside:hover {
+    transform: translateY(-5px); /* Desplazamiento hacia arriba al pasar el mouse */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Aumenta la sombra al pasar el mouse */
 }
+
+/* Efecto de fondo en el hover */
+aside:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(41, 128, 185, 0.1); /* Fondo azul claro */
+    border-radius: 10px; /* Bordes redondeados */
+    z-index: 0; /* Detrás del contenido */
+}
+
+/* Estilo de la imagen en el bloque aside */
+.ad-container img {
+    width: 100%; /* Imagen ocupa todo el ancho */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-bottom: 15px; /* Espacio debajo de la imagen */
+    z-index: 1; /* Encima del fondo */
+    position: relative; /* Para asegurar el apilamiento correcto */
+}
+
+/* Estilo del texto en el bloque aside */
+.ad-container p {
+    margin: 10px 0; /* Espaciado entre párrafos */
+    z-index: 1; /* Encima del fondo */
+    position: relative; /* Para asegurar el apilamiento correcto */
+}
+
+/* Estilo del botón en el bloque aside */
+.ad-button {
+    background-color: #2980B9; /* Color azul */
+    color: white;
+    border: none;
+    padding: 12px 25px; /* Espaciado del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    text-align: center; /* Centrar texto */
+    display: inline-block; /* Para que el botón se comporte como un bloque */
+    transition: background-color 0.3s ease; /* Transición suave */
+    text-decoration: none; /* Sin subrayado */
+    position: relative; /* Para asegurar el apilamiento correcto */
+    z-index: 1; /* Encima del fondo */
+}
+
+.ad-button:hover {
+    background-color: #1A5276; /* Color más oscuro al pasar el mouse */
+}
+
+
 
