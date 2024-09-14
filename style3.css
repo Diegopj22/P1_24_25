@@ -1,0 +1,65 @@
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #4CAF50; /* Color verde */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo de los títulos */
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #4CAF50; /* Color verde */
+    margin-top: 20px;
+}
+
+/* Estilo de las secciones */
+section {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de las listas */
+ol {
+    padding-left: 20px;
+}
+
+/* Estilo del bloque aside */
+aside {
+    background-color: #e2e2e2;
+    padding: 15px;
+    margin-top: 20px;
+    border-left: 5px solid #4CAF50; /* Línea verde a la izquierda */
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #4CAF50; /* Color verde */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
