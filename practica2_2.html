@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secciones y líneas generales de un documento HTML5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        header, footer {
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        aside {
+            background-color: #e2e2e2;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Secciones y líneas generales de un documento HTML5</h1>
+</header>
+
+<section>
+    <h2>La especificación HTML5</h2>
+    <p>La especificación HTML5 trae muchos nuevos elementos a los desarrolladores web, permitiéndoles describir la estructura de un documento web con semántica estandarizada. Este documento describe estos elementos y cómo usarlos para definir el perfil de cualquier documento.</p>
+</section>
+
+<section>
+    <h2>Problemas resueltos por HTML5</h2>
+    <ol>
+        <li>HTML5 quita la necesidad de elementos <code>&lt;div&gt;</code> para definir secciones semánticas sin definir valores específicos para los atributos class, introduciendo un nuevo elemento, <code>&lt;section&gt;</code>.</li>
+        <li>Mezclar varios documentos es difícil; esto se resuelve en HTML5 con los elementos de seccionado (<code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;nav&gt;</code> y <code>&lt;aside&gt;</code>).</li>
+        <li>HTML5 introduce el elemento <code>&lt;hgroup&gt;</code> que oculta todos los elementos de cabecera excepto el primero de más alto rango.</li>
+        <li>Un documento puede tener secciones especiales conteniendo información relacionada que no es parte del flujo principal, usando el elemento <code>&lt;aside&gt;</code>.</li>
+        <li>HTML5 introduce tres elementos de sección específicos: <code>&lt;nav&gt;</code>, <code>&lt;footer&gt;</code> y <code>&lt;header&gt;</code>.</li>
+    </ol>
+</section>
+
+<section>
+    <h2>El algoritmo de perfilado de HTML5</h2>
+    <p>Todo el contenido incluido dentro del elemento <code>&lt;body&gt;</code> es parte de una sección. Las secciones en HTML5 pueden ser anidadas.</p>
+</section>
+
+<aside>
+    <p>Este es un bloque de publicidad.</p>
+</aside>
+
+<footer>
+    <p>(c) 2010 The Example company</p>
+</footer>
+
+</body>
+</html>
